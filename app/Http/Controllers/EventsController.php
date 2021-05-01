@@ -97,7 +97,7 @@ class EventsController extends BaseController
      */
 
     public function getEventsWithWorkshops() {
-        $events = Event::orderBy('id','DESC');;
+        $events = Event::orderBy('id','DESC')->get();
 
         return $events;
     }
